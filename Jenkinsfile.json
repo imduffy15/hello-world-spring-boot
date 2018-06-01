@@ -1,0 +1,28 @@
+{
+  "app": {
+    "name": "test",
+    "replicas": "1",
+    "cpu": "10m",
+    "memory": "128Mi",
+    "chartDir": "charts/example",
+    "test": true
+  },
+  "container_repo": {
+    "host": "",
+    "username": "",
+    "password": "",
+    "jenkins_creds_id": "",
+    "repo": "",
+    "dockeremail": ".",
+    "dockerfile": "./",
+    "image_scanning": false
+  },
+  "pipeline": {
+    "enabled": true,
+    "debug": false,
+    "library": {
+      "branch": "dev"
+    }
+  }
+}
+
